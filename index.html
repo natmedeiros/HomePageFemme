@@ -7,36 +7,40 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <img class="logo" src="imagens/LogoFemme.png" alt="Logo Femme">
-        <nav class="menu">
-            <a class="item">Home</a>
-            <a class="item">Sobre nós</a>
-            <a class="item">Contato</a>
+    <header class="cabecalho" id="inicio">
+        <div class="decoracao">
+        <img class="decoracao-cabecalho-1" src="imagens/flores-esquerda.png" alt="Imagem de um galho com flores">
+        <img class="decoracao-cabecalho-2" src="imagens/flores-direita.png" alt="Imagem de um galho com flores">
+    </div>
+    <div class="cabecalho-menu">
+        <img href="#inicio" class="logo" src="imagens/LogoFemme.png" alt="Logo Femme">
+            <nav class="menu">
+            <a href="#inicio" class="item-1">Home</a>
+            <a href="#sobreNos" class="item-2">Sobre nós</a>
+            <a href="#rodape" class="item-3">Contato</a>
         </nav>
         <input class="input-pesquisar" 
         type="text" placeholder="Pesquisar">
-        <img class="Pesquisar" src="icones/search.svg">
-    </input>
-    <img class="decoracao-cabecalho-1" src="imagens/Flores.png">
-    <img class="decoracao-cabecalho-2" src="imagens/Flores.png">
+        </input>
+    </div>
     </header>
 
     <main>
         <section class="conteudo-1">
-        <h1 class="titulo">Nossa história</h1>
-        <div class="primeiraParte">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing 
-            elit. Dolorum laboriosam, esse, ipsam id sapiente 
-            aliquam eum rem consequuntur delectus sed nesciunt? 
-            Eius rem iure, error dicta enim sequi possimus eos 
-            quia natus deserunt cum asperiores quaerat, cupiditate 
-            vero explicabo dignissimos ducimus optio ullam facere 
-            quam? Illum doloremque unde nulla doloribus.
-        </p>
-        <button><img class="seta" src="icones/seta.png"></button>
+            <div class="primeiraParte">
+                <h1 class="titulo">Nossa história</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing 
+                elit. Dolorum laboriosam, esse, ipsam id sapiente 
+                aliquam eum rem consequuntur delectus sed nesciunt? 
+                Eius rem iure, error dicta enim sequi possimus eos 
+                quia natus deserunt cum asperiores quaerat, cupiditate 
+                vero explicabo dignissimos ducimus optio ullam facere 
+                quam? Illum doloremque unde nulla doloribus.
+            </p>
+        <button><img class="seta" src="icones/seta.png" alt="Imagem de uma seta apontando para a direita"></button>
     </div>
+
     <div class="segundaParte">
         <p>Tenetur natus quas incidunt facilis eaque eos qui? Modi impedit, 
             neque eos in voluptate, necessitatibus pariatur cumque 
@@ -46,12 +50,11 @@
             excepturi temporibus harum beatae sequi explicabo corporis 
             inventore iure quia. Veritatis, numquam.</p>
     </div>
-    <img class="fundo" src="imagens/Borrao.png">
-    <img class="Mulher" src="imagens/Mulher.webp">
-    <img class="linha" src="imagens/Linha.png">
+    <img class="fundo" src="imagens/Borrao.png" alt="Imagem de um respingo de tinta">
+    <img class="mulher" src="imagens/Mulher.webp" alt="Imagem de uma mulher">
     </section>
 
-    <section class="conteudo-2">
+    <section class="conteudo-2" id="sobreNos">
         <div class="texto">
             <h1 class="titulo">Sobre nós</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing 
@@ -65,33 +68,32 @@
         </div>
         <div class="icones">
             <button class="financeiro">
-                <img class="moedas" src="icones/iconmonstr-coin-10.svg">financeiro
+                <img class="moedas" src="icones/iconmonstr-coin-10.svg" alt="icone de moedas">financeiro
             </button>
 
             <button class="historia">
-                <img class="casa" src="icones/iconmonstr-home-10.svg">história
+                <img class="casa" src="icones/iconmonstr-home-10.svg" alt="Icone de uma casa">história
             </button>
 
             <button class="local">
-                <img class="ponto" src="icones/location2.svg">local
+                <img class="ponto" src="icones/location2.svg" alt="Icone ponto de local">local
             </button>
 
             <button class="contatos">
-                <img class="telefone" src="icones/phone.svg">contatos
+                <img class="telefone" src="icones/phone.svg" alt="Icone de telefone">contatos
             </button>
         </div>
-        <img class="linha" src="imagens/Linha.png">
-        <img class="flores" src="imagens/Flores.png">
-        <img class="fundo" src="imagens/Borrao.png">
+        <img class="linha" src="imagens/Linha.png" alt="Imagem de uma linha rabiscada">
+        <img class="fundo" src="imagens/Borrao.png" alt="Imagem de respingo de tinta">
     </section>
     </main>
 
-    <footer class="rodape">
-        <img class="flores" src="imagens/Flores.png">
+    <footer class="rodape" id="rodape">
+        <img class="flores" src="imagens/flores-rodape.png" alt="Imagem de um galho com flores">
         <p>Entre em contato:</p>
-        <p><img class="instagram" src="icones/instagram.svg">_femme</p>
-        <p><img class="email" src="icones/mail.svg">contatofemme@gmail.com</p>
-        <p> <img class="telefone" src="icones/iconmonstr-phone-8.svg"> (21) 93345.2653</p>
+        <p><img class="instagram" src="icones/instagram.svg" alt="Icone do instagram">_femme</p>
+        <p><img class="email" src="icones/mail.svg" alt="Icone de envelope">contatofemme@gmail.com</p>
+        <p> <img class="telefone" src="icones/iconmonstr-phone-8.svg" alt="Icone de telefone"> (21) 93345.2653</p>
     </footer>
 </body>
 </html>
