@@ -69,7 +69,7 @@ body {
     background-repeat: no-repeat;
     background-position: 85%;
     background-color: #fcd3d3;
-    width: 150px;
+    width: 180px;
     height: 35px;
     border: none;
     outline: 0;
@@ -78,6 +78,7 @@ body {
     font-weight: 400;
     font-size: 15px;
     padding-left: 10px;
+    padding-right: 45px;
     color:#EA5555;
 }
 
@@ -119,6 +120,7 @@ input::placeholder {
     width: 30px;
     border-radius: 100px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .primeiraParte > button:active {
@@ -150,7 +152,68 @@ input::placeholder {
     position: relative;
 }
 
+.conteudo-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-family: 'Sarala', sans-serif;
+    font-size: 12px;
+}
+
+.texto > h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 40px;
+    color: #EA5555;
+    margin: 20px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 40px;
+}
+
+.texto > .linha {
+    margin-top: 300px;
+    margin-right: 160px;
+}
+
+.conteudo-2 > .fundo {
+    display: block;
+    height: 400px;
+    position: absolute;
+    margin-left: 400px;
+}
+
+.financeiro {
+    grid-area: financeiro;
+}
+
+.historia {
+    grid-area: historia;
+}
+
+.local {
+    grid-area: localizacao;
+}
+
+.contatos {
+    grid-area: contatos;
+}
+
+.icones {
+    display: grid;
+    height: 200px;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 'financeiro' 'historia' 'localizacao' 'contatos';
+}
+
 .linha {
-    height: 100px;
+    height: 200px;
     margin: 0;
 }
