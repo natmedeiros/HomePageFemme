@@ -112,7 +112,7 @@ input::placeholder {
     margin: 40px;
 }
 
-.primeiraParte > button {
+.primeiraParte > .botao {
     background-color: #EA5555;
     border: none;
     box-shadow: 1px 1px 5px rgb(37, 37, 37);
@@ -123,7 +123,7 @@ input::placeholder {
     cursor: pointer;
 }
 
-.primeiraParte > button:active {
+.primeiraParte > .botao:active {
     box-shadow: none;
 }
 
@@ -139,9 +139,9 @@ input::placeholder {
 
 .conteudo-1 .fundo {
     display: block;
-    height: 400px;
+    height: 470px;
     position: absolute;
-    margin-left: 400px;
+    margin-left: 600px;
 }
 
 
@@ -159,6 +159,7 @@ input::placeholder {
     justify-content: space-around;
     font-family: 'Sarala', sans-serif;
     font-size: 12px;
+    margin-top: 100px;
 }
 
 .texto > h1 {
@@ -174,7 +175,7 @@ input::placeholder {
     flex-direction: column;
     align-items: center;
     width: 300px;
-    margin: 40px;
+    margin-left: 152px;
 }
 
 .texto > .linha {
@@ -184,36 +185,57 @@ input::placeholder {
 
 .conteudo-2 > .fundo {
     display: block;
-    height: 400px;
+    height: 450px;
     position: absolute;
     margin-left: 400px;
+    margin-top: 180px;
 }
 
-.financeiro {
-    grid-area: financeiro;
-}
-
-.historia {
-    grid-area: historia;
-}
-
-.local {
-    grid-area: localizacao;
-}
-
-.contatos {
-    grid-area: contatos;
-}
-
-.icones {
+.container {
     display: grid;
-    height: 200px;
-    grid-template-columns: 100px 1fr;
-    grid-template-rows: 100px 1fr;
-    grid-template-areas: 'financeiro' 'historia' 'localizacao' 'contatos';
+    height: 150px;
+    padding: 15px;
+    grid-template-columns: 180px 180px;
+    grid-template-rows: 50px 50px;
+    position: relative;
+    gap: 20px 40px;
+    margin: 150px;
 }
+
+.container > .botao-2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #EA5555;
+    background-color: #fcd3d3;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 1px 7px #EA5555;
+}
+
+.container > .botao-2:hover {
+    background-color: #ffc4c4;
+}
+
+.container > .botao-2:active {
+    box-shadow: none;
+}
+
+.container > .botao-2 > .item {
+    height: 25px;
+    margin-right: 5px;
+}
+
+.container > .botao-2, .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-left: 12px;
+}
+
 
 .linha {
     height: 200px;
-    margin: 0;
 }
