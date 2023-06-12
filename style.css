@@ -18,6 +18,7 @@ body {
     overflow-x: hidden; 
 }
 
+
 .cabecalho {
     margin-bottom: 50px;
 }
@@ -25,7 +26,6 @@ body {
 .logo {
     display: inline-block;
     height: 180px;
-    cursor: pointer;
 }
 
 .cabecalho-menu {
@@ -66,7 +66,7 @@ body {
 .input-pesquisar {
     background-image: url('icones/loupe.png');
     background-repeat: no-repeat;
-    background-position: 85%;
+    background-position: 95%;
     background-color: #fcd3d3;
     width: 350px;
     height: 45px;
@@ -76,8 +76,8 @@ body {
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    padding-left: 20px;
-    padding-right: 65px;
+    padding-left: 17px;
+    padding-right: 40px;
     color:#EA5555;
 }
 
@@ -157,10 +157,11 @@ input::placeholder {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-family: 'Sarala', sans-serif;
     font-size: 16px;
     margin-top: 100px;
+    height: 600px;
 }
 
 .texto > h1 {
@@ -176,17 +177,17 @@ input::placeholder {
     flex-direction: column;
     align-items: center;
     width: 300px;
-    margin-left: 152px;
+    margin: 40px;
+    margin-left: 95px;
 }
 
 .texto > .linha {
-    margin-top: 300px;
     margin-right: 160px;
 }
 
 .conteudo-2 > .fundo {
     display: block;
-    height: 700px;
+    height: 607px;
     position: absolute;
     margin-left: 700px;
     margin-top: 200px;
@@ -237,24 +238,20 @@ input::placeholder {
 }
 
 
-.linha {
-    height: 400px;
-}
-
 .rodape {
     background-color: #ea5555;
     color: white;
     font-family: 'Playfair Display', serif;
     font-size: 16px;
-    height: 100px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin-top: 192px;
 }
 
 .rodape .flores {
-    height: 100px;
+    height: 80px;
 }
 
 .menuRodape {
@@ -287,4 +284,40 @@ input::placeholder {
     align-items: center;
     margin-left: 12px;
     gap: 10px;
+}
+
+/*
+   @media (max-width: 600px) {
+            .muito-pequeno { display: block; }
+        }
+
+        @media (max-width: 1000px), (orientation: portrait) {
+            .pequeno-retrato { display: block; }
+        }
+
+        @media (min-width: 500px) and (max-width: 1000px) {
+            .intervalo { display: block; }
+        }
+*/
+
+@media (max-width: 800px) {
+    .logo { height: 80px;
+    margin-left: 10px;}
+    .decoracao {height: 50px;}
+    .input-pesquisar {display: none;}
+    .menu {font-size: 16px; flex-direction: column;}
+    .conteudo-1 .fundo { display: none;}
+    .conteudo-1 .mulher { display: none;}
+    .conteudo-2 .fundo {display: none;}
+    .container {display: none;}
+    .conteudo-2 {flex-direction: column;}
+    .texto {margin-top: 300px;}
+    .linha {height: 128px;}
+    .menuRodape {font-size: 10px; height: 40px;}
+    .rodape .flores {display: none;}
+    .instagram { height: 15px;}
+    .email { height: 18px;}
+    .telefone { height: 15px;}
+    .menuRodape > .contat { margin-left: 0px;}
+    .menuRodape, .itemRodape {gap: 0px}
 }
