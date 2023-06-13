@@ -136,7 +136,7 @@ input::placeholder {
     display: block;
     height: 700px;
     position: absolute;
-    margin-left: 800px;
+    margin-left: 580px;
     margin-top: 60px;
 }
 
@@ -145,8 +145,7 @@ input::placeholder {
     display: block;
     position: relative;
     height: 600px;
-    margin-left: 120px;
-    margin-top: 100px;
+    margin-top: 77px;
 }
 
 
@@ -174,7 +173,6 @@ input::placeholder {
     align-items: center;
     width: 300px;
     margin: 40px;
-    margin-left: 95px;
 }
 
 .texto > .linha {
@@ -185,8 +183,8 @@ input::placeholder {
     display: block;
     height: 607px;
     position: absolute;
-    margin-left: 700px;
-    margin-top: 200px;
+    margin-left: 478px;
+    margin-top: 91px;
 }
 
 .container {
@@ -197,7 +195,7 @@ input::placeholder {
     grid-template-rows: 50px 50px;
     position: relative;
     gap: 25px 40px;
-    margin: 150px;
+    margin: 65px;
 }
 
 .container > .botao-2 {
@@ -290,7 +288,6 @@ input::placeholder {
     .conteudo-1 .fundo { display: none;}
     .conteudo-1 .mulher { display: none;}
     .conteudo-2 .fundo {display: none;}
-    .texto { margin-right: 80px;}
     .container {display: none;}
     .menuRodape {font-size: 10px; height: 40px;}
     .rodape .flores {display: none;}
