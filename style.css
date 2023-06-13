@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-/* font-family: 'Righteous', cursive;
-font-family: 'Sarala', sans-serif; 
-font-family: 'Playfair Display', serif; */
 
 * {
     margin: 0;
@@ -285,20 +282,6 @@ input::placeholder {
     margin-left: 12px;
     gap: 10px;
 }
-
-/*
-   @media (max-width: 600px) {
-            .muito-pequeno { display: block; }
-        }
-
-        @media (max-width: 1000px), (orientation: portrait) {
-            .pequeno-retrato { display: block; }
-        }
-
-        @media (min-width: 500px) and (max-width: 1000px) {
-            .intervalo { display: block; }
-        }
-*/
 
 @media (max-width: 800px) {
     .logo { height: 80px;
